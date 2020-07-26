@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello View</title>
+    <style>
+        #app{
+            display:grid;
+            place-items: center;
+        }
+        .box{
+            background-color :green;
+            width:300px;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h2>{{lesson}}</h2>
+        <h2>{{counter}}</h2>
+       <button v-on:click="incrementCounter">Increment ++</button>
+        <button v-on:click="decrementCounter">Decrement --</button>
+        <div class = "box"  @mouseover = "overTheBox" >
+
+        </div>
+    </div>
+    <div id="app2">
+        <h1>{{name}}   {{profile}}</h1>
+     </div>   
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="main.js"></script>
+</body>
+</html>
